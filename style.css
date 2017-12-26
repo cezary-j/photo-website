@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    background-color: #fff;
+}
+
+#MenuIcon {
+    height: 250px;
+    width: 50px;
+    position: fixed;
+    top: 20px;
+    right: 100px;
+}
+
+#MenuIcon:hover {
+    cursor: pointer;
+
+}
+
+#MenuLine {
+    height: 4px;
+    width: 40px;
+    background-color: #282828;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all .3s;
+}
+#MenuIcon:hover #MenuLine {
+    width: 50px;
+}
+
+#MenuLine::before {
+    content: '';
+    height: 4px;
+    width: 40px;
+    background-color: #282828;
+    position: absolute;
+    margin-top: 10px;
+    transition: all .3s;
+}
+
+#MenuIcon:hover #MenuLine::before {
+    width: 40px;
+}
+
+#MenuLine::after {
+    content: '';
+    height: 4px;
+    width: 40px;
+    background-color: #282828;
+    position: absolute;
+    margin-top: -10px;
+    transition: all .3s;
+}
+#MenuIcon:hover #MenuLine::after {
+    width: 40px;
+}
+
+#MainList {
+    height: 100vh;
+    width: 350px;
+    background-color: #282828;
+    -webkit-clip-path: polygon(0 0,100% 0,0% 100%,0% 100%);
+    position: fixed;
+    top:0;
+    left: -400px;
+    transition: all .5s ease-in-out;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+ul li {
+    margin: 40px;
+}
+
+ul li:hover {
+    cursor: pointer;
+}
+
+.line {
+    height: 2px;
+    width: 150px;
+
+}
+
+#closeMenu {
+    position: absolute;
+    bottom: 150px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#closeMenu {
+    cursor: pointer;
+}
+
+.top {
+    height: 100vh;
+
+}
+.blue {
+    height: 500px;
+    background-color: blue;
+}
+.top h1 {
+    display: flex;
+    margin-top: 40vh;
+    justify-content: center;
+
+}
+.top h2 {
+    display: flex;
+    justify-content: center;
+}
