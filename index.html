@@ -12,30 +12,44 @@
   <script src="js/jquery-3.2.1.min.js"></script>
 </head>
 <body>
-  <header class="top">
+  <header id="top">
         <div id="MenuIcon" class="hamburger">
           <div id="MenuLine"></div>
         </div>
 
         <nav id="MainList">
           <ul>
-            <li>HOME</li>
-            <li>KILKA SŁÓW O MNIE</li>
-            <li>REALIZACJE</li>
-            <li>OPINIE</li>
+            <li><a href="#top">HOME</a></li>
+            <li><a href="#about">KILKA SŁÓW O MNIE</a></li>
+            <li><a href="#photos">REALIZACJE</a></li>
+            <li><a href="#opinions">OPINIE</a></li>
+            <li><a href="#contact">Skontaktuj się ze mną</a></li>
           </ul>
             <div id="closeMenu">
               <img src="img/close-menu.png" height="30px" width="30px">
             </div>
-
         </nav>
-      <h1>Profesjonalna fotografia</h1>
+    <div class="container">
+      <h1><span class="text-color">Profesjonalna</span> fotografia</h1>
 
-      <h2>Jan Kowalski</h2>
+      <h3>Jan Kowalski</h3>
       <figure>
         <img class="photographer-img" src="img/fotograf.jpg">
       </figure>
+      <br><br>
+    <p class="description">Jestem fotografem od xxx lat. Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit, sed do eiusmod tempor incididunt ut labore et dolor
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor
+      elit, sed do eiusmod tempor incididunt ut labore et dolor elit, sed do eiusmod tempor incididunt ut labore et dolor
+      elit, sed do eiusmod
+    </p>
+
+    </div>
+    <br>
   </header>
+  <br><br>
+
+
     <section id="about">
       <div class="container">
 
@@ -65,7 +79,8 @@
 
   <section id="photos">
     <div class="container">
-    <h2 class="heading">Realizacje</h2>
+    <h2 class="heading">Fotografia</h2>
+      <h4>Poniżej znajdą Państwo moje przykładowe fotografie</h4>
 
       <div class="gallery">
         <div><img src="img/beach.jpeg"></div>
@@ -82,6 +97,41 @@
 
     </div>
   </section>
+  <br>
+
+  <section id="courses">
+    <div class="container">
+
+      <h2 class="heading-courses">Kursy i szkolenia</h2>
+      <h4>Prowadzę kursy z fotografii a także szkolenia z obróbki zdjęć</h4>
+      <div class="course-offer">
+        <div class="box-offer col box-size">
+          <div class="box-padding">
+            <div class="box-title">Fotografia ślubna</div>
+            <div class="box-skills">Poziom I</div>
+            <div class="price">200 zł</div>
+            <div class="price-text">za miesiąc</div>
+            <div class="box-details">Kurs dla osób początkujących chcących poznać specyfikację zawodu</div>
+            <a href="#"><div class="box-button">Zapisz się</div></a>
+            <div class="box-text"></div>
+            <div class="box-text"></div>
+            <div class="box-text"></div>
+            <div class="box-text"></div>
+            <div class="box-text"></div>
+            <div class="box-text"></div>
+            <div class="box-text"></div>
+            <div class="box-text"></div>
+            <div class="box-text"></div>
+
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </section>
+
 <script src="scripts.js"></script>
 </body>
 </html>
