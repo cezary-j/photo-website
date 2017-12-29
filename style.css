@@ -17,7 +17,11 @@ body {
     max-width: 45%;
     line-height: 2rem;
 }
-
+ @media (max-width: 1230px){
+    .description {
+        display: none;
+    }
+}
 
 @media (max-width: 1100px){
     .text-aboutMe {
@@ -39,6 +43,13 @@ body {
     padding: 0 17vw;
 
 
+}
+.gallery div {
+    padding-top: 9vh;
+}
+
+.description {
+    line-height: 2em;
 }
 article {
     margin: 0;
@@ -122,7 +133,9 @@ ul li:hover {
     cursor: pointer;
 }
 
-
+h2 {
+    font-weight: 200;
+}
 #closeMenu {
     position: absolute;
     bottom: 150px;
@@ -134,21 +147,18 @@ ul li:hover {
     cursor: pointer;
 }
 
-.top {
+#top {
     height: 100vh;
 }
 
-.top h1 {
-    display: flex;
-    padding-top: 20vh;
-    justify-content: center;
-
+.heading {
+    padding-top: 8vh;
 }
-.top h2  {
-    display: flex;
-    justify-content: center;
+
+#top h3  {
     font-family: 'Roboto Condensed', sans-serif;
     font-style: italic;
+    text-align: center;
 
 }
 figure {
@@ -160,28 +170,35 @@ figure {
 .photographer-img {
     max-width:100%;
 }
+
+@media(max-width: 420px){
+    .container figure img {
+        height: 25vh;
+        width: 100%;
+        padding-top: 25%;
+    }
+}
+@media(max-width: 420px){
+    #top{
+      height: 100%;
+    }
+}
 h1 {
     font-family: 'Alex Brush', cursive;
     font-size: 50px;
+    text-align: center;
+    padding-top: 20vh;
 }
 
-@media (max-width: 420px) {
-        h1 {
-            display: flex;
-            text-align: center;
-        }
-}
 
-.heading {
-    font-weight: 200;
-}
+
+
 #about {
     height: 100%;
     background-color: #f6f6f6;
     padding-bottom: 5vh;
 }
 #photos h2, #about h2 {
-    padding-top: 40px;
     display: flex;
     justify-content: center;
     font-size: 2em;
@@ -203,7 +220,6 @@ h1 {
   display: -ms-flexbox;
     -ms-flex-wrap: wrap;
     -ms-flex-direction: column;
-    padding-top: 9vh;
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
     display: -webkit-box;
@@ -224,9 +240,10 @@ h1 {
 }
 
 
-@media screen and (max-width: 480px) {
-    .gallery div {
+@media(max-width: 480px) {
+    .gallery div img {
         margin: 0;
+
     }
     .gallery {
         padding: 0;
