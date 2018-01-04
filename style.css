@@ -60,11 +60,12 @@ article {
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 9vh;
+    padding-bottom: 5vh;
 }
 #MenuLine {
     height: 4px;
     width: 40px;
-    background-color: #ec6d6d;
+    background-color: #fabc36;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -73,7 +74,7 @@ article {
 }
 #MenuIcon:hover #MenuLine {
     width: 50px;
-    background-color: #ec6d6d;
+    background-color: #fabc36;
 }
 
 #MenuLine::before {
@@ -151,7 +152,7 @@ h2 {
     height: 100%;
 }
 .text-color {
-    color: #ec6d6d;
+    color: #fabc36;
 }
 .heading {
     padding-top: 8vh;
@@ -189,7 +190,7 @@ h1 {
     font-family: 'Alex Brush', cursive;
     font-size: 50px;
     text-align: center;
-    padding-top: 11vh;
+    padding-top: 8vh;
 }
 
 
@@ -265,8 +266,8 @@ h4 {
     padding-top: 3vh;
     text-align: center;
 }
-.heading-courses {
-    color: white;
+
+.heading {
     padding-top: 8vh;
 }
 
@@ -276,6 +277,9 @@ h4 {
     color: white;
 }
 
+.heading-courses {
+    color: white;
+}
 
 .box-offer {
     text-align: center;
@@ -308,16 +312,16 @@ h4 {
 }
 
 .price {
-    color: #fb9494;
+    color: #fabc36;
     font-size: 4em;
     font-weight: 600;
 
 }
 .price-text {
-    color: #fb9494;
+    color: #fabc36;
     font-weight: 600;
     font-size: 1.5em;
-    border-bottom: 1px solid #fb9494;
+    border-bottom: 1px solid #fabc36;
     padding-bottom: 10px;
     margin-bottom: 25px;
 }
@@ -333,7 +337,7 @@ h4 {
 .box-button {
     width: 100%;
     padding: 30px 0;
-    background-color: #fb9494;
+    background-color: #fabc36;
     border-radius: 1px;
     color: #fff;
     font-size: 1.5em;
