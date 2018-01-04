@@ -255,9 +255,10 @@ h2 {
 }
 
 #courses {
-    height: 80vh;
+    height: 100%;
     background: linear-gradient(rgba(16, 16, 16, 0.8),rgba(16, 16, 16, 0.9)),url('img/background.jpg');
     background-size: cover;
+
 
 }
 
@@ -293,22 +294,22 @@ h4 {
     margin: 0 0 0 1.5%;
 }
 .box-size {
-    width: 25%;
+    width: 33%;
 }
 .box-padding {
     padding: 30px 10px;
 }
 
 .box-title {
-    font-size: 1.4em;
+    font-size: 1.5em;
     color: #464646;
     font-weight: 600;
 }
 .box-skills {
     font-size: 1.1em;
-    font-weight: 600;
+    font-weight: 400;
     margin: 10px 0 10px 0;
-    color: #464646;
+    color: #484848;
 }
 
 .price {
@@ -332,16 +333,27 @@ h4 {
     color: #464646;
     width: 90%;
     margin: auto;
-    min-height: 13vh;
+    min-height: 10vh;
 }
 .box-button {
     width: 100%;
-    padding: 30px 0;
+    padding: 20px 0;
     background-color: #fabc36;
     border-radius: 1px;
     color: #fff;
     font-size: 1.5em;
+    margin-bottom: 6vh;
 }
 a{
     text-decoration: none;
+}
+
+.program {
+    border-bottom: 1px solid #d0d0d0;
+    padding: 2vh 0;
+    color: #484848;
+    font-size: 1em;
+}
+.program-last {
+    border-bottom: none;
 }
