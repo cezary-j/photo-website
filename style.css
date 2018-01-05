@@ -17,11 +17,7 @@ body {
     max-width: 45%;
     line-height: 2rem;
 }
- /*@media (max-width: 1230px){*/
-    /*.description {*/
-        /*display: none;*/
-    /*}*/
-/*}*/
+
 
 @media (max-width: 1100px){
     .text-aboutMe {
@@ -389,10 +385,7 @@ a{
 
 }
 
-#contact {
-    background-color: #111111;
-    height: 50vh;
-}
+
 
 .box-counter {
     text-align: center;
@@ -420,9 +413,131 @@ a{
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+        align-items: center;
 
     }
     .box-counter {
         padding: 1vh 0;
     }
+}
+
+@media (max-width: 1024px) {
+    .clients-counter {
+        font-size: 4em;
+    }
+
+}
+
+hr {
+    opacity: 0.2;
+}
+
+#contact {
+    background-color: #111111;
+    height: 100%;
+}
+#contact a {
+    color: #fff;
+}
+
+.heading-contact {
+    color: #fff;
+}
+
+
+input[type=text], select, textarea {
+
+    padding: 10px; /* Some padding */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 10px; /* Bottom margin */
+}
+
+input[type=submit] {
+    background-color: #fabc36;
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    font-size: 1em;
+
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    width: 40%;
+    font-size: 0.9em;
+    font-family: Roboto;
+}
+
+.fa-facebook, .fa-twitter, .fa-instagram {
+    color: white;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    line-height: 6vh;
+}
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    line-height: 6vh;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10vh;
+    align-items: center;
+}
+
+
+#contact h3 {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+a {
+    color: #fff;
+}
+a:hover {
+    color: red;
+}
+
+.contact-info {
+    color: #fff;
+}
+
+
+#map {
+    z-index: -1;
+}
+
+@media (max-width: 860px) {
+    .contact-content{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+@media (max-width: 860px) {
+    .form {
+         width: 100%;
+     }
+.social-media {
+    width: 100%;
+}
+.contact-info {
+    width: 100%;
+}
 }
