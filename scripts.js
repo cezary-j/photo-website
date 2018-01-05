@@ -15,7 +15,7 @@ $(document).ready(function(){
         $("#MainList").css("-webkit-clip-path","polygon(0 0, 0% 0, 100% 100%, 0% 100%)");
         function hideMenu(){
             $("#MainList").css("left","-300px");
-            $("#MenuIcon").animate({right:'50'},300);
+            $("#MenuIcon").animate({right:'20'},300);
         }
         setTimeout(hideMenu, 300);
 
@@ -25,3 +25,19 @@ $(document).ready(function(){
         setTimeout(Layout,600);
     });
 });
+
+
+/*   SCRIPTS GOOGLE MAP   */
+
+function initMap() {
+    var uluru = {lat: 51.250, lng: 22.566};
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 12,
+        center: uluru
+    });
+    var marker = new google.maps.Marker({
+        position: uluru,
+        map: map
+    });
+}
+
