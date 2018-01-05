@@ -29,11 +29,26 @@ $(document).ready(function(){
 
 /*   SCRIPTS GOOGLE MAP   */
 
+
+var styles = [
+    {
+        elementType: 'geometry',
+
+
+        stylers: [
+            {color: '#fabc36'}]
+    }];
+
+
+
 function initMap() {
     var uluru = {lat: 51.250, lng: 22.566};
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 12,
-        center: uluru
+        center: uluru,
+        styles: styles
+
+
     });
     var marker = new google.maps.Marker({
         position: uluru,
